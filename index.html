@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmacy</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./images/charmacy ..png" alt="charmacy_logo">
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./medicines.html">All Medicines</a>
+                <a href="./cart.html">Cart</a>
+
+                <span id="authSection">
+                    <a href="./login.html" id="loginLink">Login</a>
+                    <a href="./register.html" id="signupLink">Sign Up</a>
+                </span>
+
+                <span id="userSection" style="display: none;">
+                    <span id="greetingText"></span>
+                    <button id="logout-btn" style="margin-left: 10px;">Logout</button>
+                </span>                
+            </div>
+        </nav>
+    </header>
+    <section id="searchContainer">
+        <div class="search-header">
+            <h2>What are you looking for?</h2>
+            <div class="upload-link">
+                <span>Order with prescription.</span>
+                <button id="uploadBtn">UPLOAD NOW</button>
+                <input type="file" id="prescriptionUpload" accept=".jpg, .jpeg, .png, .pdf" hidden />
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <div class="search-input-wrapper">
+                <input type="text" id="searchMed" placeholder="Search for medicines/healthcare products">
+                <ul id="suggestionList" class="suggestion-box"></ul>
+            </div>
+            <button>Search</button>
+        </div>
+    </section>
+    <section id="featured-medicines">
+        <h3>Popular Medicines</h3>
+        <div class="medicine-grid">
+            <div class="medicine-card">
+                <img src="./images/PfizerParacetamol500mgFilmCoatedTablets24Pack.webp" alt="">
+                <h4>Paracetamol 500mg</h4>
+                <p>₹50</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="medicine-card">
+                <img src="./images/12c99cd1-f9c0-4967-ab9f-f0ad68797d9a.png" alt="">
+                <h4>Dolo 650</h4>
+                <p>₹150</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="medicine-card">
+                <img src="./images/ecosprin-gold-10-capsule-15_ecosprin-gold-10-capsule-15--TM-TACR1-012747_1.webp"
+                    alt="">
+                <h4>Ecosprin GOLD 10</h4>
+                <p>₹139</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="medicine-card">
+                <img src="./images/evion-400-capsule-20_evion-400-capsule-20--TM-CACR1-013095_1.avif" alt="">
+                <h4>Evion 400</h4>
+                <p>₹378</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="categories">
+        <h3>Shop by Category</h3>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.healthshots.com/healthshots/en/uploads/2023/04/12004752/pain-1.jpg" alt="">
+                <p>Pain Relief</p>
+            </div>
+            <div class="category-card">
+                <img src="https://images.healthshots.com/healthshots/en/uploads/2023/04/12004752/pain-1.jpg" alt="">
+                <p>Pain Relief</p>
+            </div>
+            <div class="category-card">
+                <img src="https://images.healthshots.com/healthshots/en/uploads/2023/04/12004752/pain-1.jpg" alt="">
+                <p>Pain Relief</p>
+            </div>
+            <div class="category-card">
+                <img src="https://images.healthshots.com/healthshots/en/uploads/2023/04/12004752/pain-1.jpg" alt="">
+                <p>Pain Relief</p>
+            </div>
+        </div>
+    </section>
+    <section id="why-choose-us">
+        <h3>Why Choose Charmacy?</h3>
+        <ul>
+            <li>100% Genuine Medicines</li>
+            <li>Easy Prescription Upload</li>
+            <li>Fast and Safe Delivery</li>
+        </ul>
+    </section>
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="">Social Media</a>
+        <p>&copy; 2025 Charmacy. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+<script type="module" src="./js/navbar.js"></script>
+<script type="module" src="./js/main.js"></script>

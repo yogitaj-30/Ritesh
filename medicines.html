@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Medicines</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/medicines.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/charmacy ..png" alt="charmacy_logo">
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./medicines.html">All Medicines</a>
+                <a href="./cart.html">Cart</a>
+
+                <span id="authSection">
+                    <a href="./login.html" id="loginLink">Login</a>
+                    <a href="./register.html" id="signupLink">Sign Up</a>
+                </span>
+
+                <span id="userSection" style="display: none;">
+                    <span id="greetingText"></span>
+                    <button id="logout-btn" style="margin-left: 10px;">Logout</button>
+                </span>                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="filters">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <label>Max Price: ₹<span id="priceValue">1000</span>
+                <input type="range" id="priceFilter" min="0" max="1000" value="1000">
+            </label>
+            <label>
+                <input type="checkbox" id="availabilityFilter">Only show available
+            </label>
+        </section>
+        <section id="medicineGrid" class="medicine-grid"></section>
+
+        <div class="pagination">
+            <button id="prevPage">Prev</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
+    </main>
+</body>
+</html>
+<script type="module" src="./js/navbar.js"></script>
+<script type="module" src="./js/medicines.js"></script>
